@@ -1,0 +1,149 @@
+:root {
+    --primary: #FEA116;
+}
+
+body {
+    background-image: url("../image/BackgroundPhoto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    font-family: monospace;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-nav .nav-link {
+    margin: 0 15px;
+    color: #FFFFFF;
+    font-size: 15px;
+    text-transform: uppercase;
+    outline: none;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+.navbar {
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .dropdown {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: static;
+    display: none;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.nada {
+    width: 33%;
+}
+
+.logo {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+.login{
+    width: 20%;
+    display: flex;
+    justify-content: end;
+}
+
+.login button {
+    background: transparent;
+    color: white;
+    border: 3px solid white;
+    padding: 7px;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.buscador {
+    border-radius: 10px;
+    background-color: rgba(255,255,255,.75);
+    width: 16%;
+    height: 30%;
+    min-width: 250px;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 23%;
+    padding: 10px;
+}
+
+.buscador h1 {
+    margin: 4%;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fechas {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    box-sizing: border-box;
+}
+
+.informacion {
+    display: flex;
+    border: none;
+    column-gap: 10px;
+}
+
+.personas, .tipo-habitacion {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+.personas input, .tipo-habitacion input{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(92,92,92);
+    color: white;
+    border: none;
+    width: 90%;
+    margin: 0 5% 0 5% ;
+    padding: 10px;
+}
