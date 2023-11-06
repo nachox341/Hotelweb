@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/image/Icon-logo.ico">
+    <title>Nautilus</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <script defer src="/js/home.js"></script>
+</head>
+<body>
+    <div class="barra">
+        <div class="nada"></div>
+        <div class="logo">
+            <img src="image/logo1.png">
+        </div>
+        <div class="login">
+            <a href="login.html"><button>Iniciar Sesion</button></a>
+        </div>
+    </div>
+    <hr>
+    <div class="contenedor-navegador">
+        <nav class="navegador sticky">
+            <a href="home.html">Inicio</a>
+            <a href="room.html">Habitaciones</a>
+            <a href="about.html">Nosotros</a>
+            <a href="contact.html">Contacto</a>
+        </nav>
+    </div>
+    <hr>
+    <main>
+        <div class="contenedor-buscador">
+
+            <div class="buscador">
+                <form class="form-buscador" method="post" action="#">
+                    <div class="fecha-desde">
+                        <label for="check-in">Desde</label>
+                        <input type="date" id="check-in" name="check-in" required>
+                    </div>
+
+                    <div class="fecha-hasta">
+                        <label for="check-out">Hasta</label>
+                        <input type="date" id="check-out" name="check-out" required>
+                    </div>
+
+                    <div class="habitacion">
+                        <label for="habitacion">Habitación</label>
+                        <select id="habitacion" name="habitacion" required>
+                            <option value="seleccionar">Seleccionar</option>
+                            <option value="simple">Simple</option>
+                            <option value="doble">Doble</option>
+                            <option value="triple">Triple</option>
+                        </select>
+                    </div>
+
+                    <div class="personas">
+                        <label for="cantidad-personas">Personas</label>
+                        <input type="number" id="cantidad-personas" name="cantidad-personas" min="1" value="1" required>
+                    </div>
+
+                    <div class="boton-buscador">
+                        <button type="submit">
+                            <img src="image/lupa.png">
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+        <div class="sesion-dos">
+            <div class="contenedor-carrusel">
+                <div class="carrusel">
+                    <img src="/image/imagen1.jpg" alt="imagen 1"></img>
+                    <img src="/image/imagen2.jpg" alt="imagen 2"></img>
+                    <img src="/image/imagen3.jpg" alt="imagen 3"></img>
+                    <img src="/image/imagen4.jpg" alt="imagen 4"></img>
+                </div>
+    
+                <ul class="circulitos">
+                    <li class="circulo activo"></li>
+                    <li class="circulo"></li>
+                    <li class="circulo"></li>
+                    <li class="circulo"></li>
+                </ul>
+            </div>
+            <div class="contenedor-texto">
+                <p>Descanse a pasos de Playa Marítima en el Hotel Nautilus, Atlántida. A minutos de Cavancha, Muelles, restaurantes y el casino "Dreams Iquique". Piscina con vista al mar, Coral Reef sirve desayuno, almuerzo y cena.</p>
+            </div>
+        </div>
+
+        <div class="sesion-tres">
+            <div class="texto">
+                <h1>Piscina del hotel</h1>
+                <p>La piscina cubierta climatizada tiene techos abovedados con vigas de madera. La bañera de hidromasaje cuenta con ventanales y da al estanque y a la cara norte del hermoso paraje local. Por motivos de seguridad y salud, los niños deben ir acompañados de un adulto cuando visiten la piscina.
+                    <br><br>
+                    La serena piscina del hotel y resort spa Royal Villas cuenta con una decoración elegante que incluye impresionantes columnas de teca del piso al techo contrastadas con un fresco piso de baldosas negras. También está disponible un comedor junto a la piscina, que ofrece una selección de platos de cualquier cocina que desee, que son saludables y deliciosos. Las clases diarias de aeróbic acuático ayudan a los huéspedes a mantenerse en forma mientras viajan.
+                </p>
+            </div>
+            <div class="imagen">
+                <img src="/image/imagen5.jpg" alt="imagen 5"></img>
+            </div>
+        </div>
+        <div class="fin"></div>
+    </main>
+    <footer>
+        <div class="horario">
+            <h1>Horario de apertura</h1>
+            <p>Lunes a jueves: 8:00</p>
+            <p>Viernes a Domingo: 6:00</p>
+        </div>
+        <div class="direccion">
+            <h1>Direccion</h1>
+            <p>Manuel Pl. 2940, 1111020 Iquique, Tarapacá</p>
+            <p>+569 78824017</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,100 +1,163 @@
-:root {
-    --primary: #FEA116;
-}
-
 body {
-    background-image: url("../image/BackgroundPhoto.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     margin: 0;
     height: 100vh;
-    font-family: monospace;
+    font-family: Arial, sans-serif;
 }
 
-.navbar-nav {
+.barra{
+    padding: 18px 0;
+    color: rgba(240,240,232,255);
+
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
 }
 
-.navbar-nav .nav-link {
-    margin: 0 15px;
-    color: #FFFFFF;
-    font-size: 15px;
-    text-transform: uppercase;
-    outline: none;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
+.nada{
+    width: 33%;
 }
 
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-    color: var(--primary);
-}
+/*-- 1.1. Diseño del logo central --*/
+.logo{
+    width: 33%;
 
-.navbar {
+    display: flex;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo img{
+    width: 40%;
+}
+
+/*-- 1.2. Diseño del boton para ir al login --*/
+.login{
+    width: 33%;
+
+    display: flex;
+    justify-content: end;
+}
+
+.login button{
+    background-color: transparent;
+    margin: 0;
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+
+    cursor: pointer;
+}
+
+.login button:hover{
+    background-color: #cc3917;
+    color: rgba(240,240,232,255);
+}
+
+/*-- 1.3. Diseño del navegador --*/
+hr{
+    width: 95%;
+    height: 1px;
+    background-color: #8f859e;
+    border: none;
+}
+
+.contenedor-navegador{
+    padding: 10px 0;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    transition: 0.1s;
+}
+
+.contenedor-navegador.abajo{
+    background-color: white;
+    padding: 15px 0;
+    box-shadow:  0 0 28px 0 #a1a1a1;
+}
+
+.navegador{
     width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
 }
 
-.navbar-nav .nav-link,
-.navbar-nav .dropdown {
-    margin: 0 10px;
-    display: inline-block;
+.navegador a{
+    color: #151515;
+    font-size: 20px;
+    text-decoration: none;
 }
 
-.dropdown-menu {
-    position: static;
-    display: none;
+.navegador a:hover{
+    color: #cc3917;
 }
 
-.nav-item:hover .dropdown-menu {
-    display: block;
+.contenedor-titulo{
+    width: 100%;
+    margin: 4em 0;
+    padding: 1em 0;
+    background-color: #e3e3e3;
+
+    display: flex;
+    justify-content: center;
 }
+.contenedor-habitaciones{
+    width: calc(100% - 21em);
+    margin: 0 8em;
 
-
-.container {
-    background-color: rgba(128, 128, 128, 0.5);
-    width: 80%;
-    height: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin: 50px auto 0 auto;
-    border-radius: 20px;
-}
-.page-title {
-    text-align: center;
-    padding: 20px 0;
-    color: var(--primary);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5em;
 }
 
-.room-item {
-    border: 1px solid #ccc;
+.habitacion {
     padding: 20px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #e3e3e3;
+    box-shadow:  27px 27px 45px #afafaf, -27px -27px 45px #ffffff;
 }
 
-.image-container {
+.contenedor-imagen {
     width: 100%;
 }
 
-.img {
+.contenedor-imagen img {
     width: 100%;
     height: auto;
 }
 
-.description {
+.descripcion {
     text-align: center;
     padding-top: 10px;
 }
 
-.book-now-link {
+.reserva {
     text-decoration: none;
-    color: #FEA116;
+    color: #cc3917;
     font-weight: bold;
+}
+
+.fin{
+    margin: 15em;
+    background-color: white;
+}
+
+/*-- . Diseño del pie de página --*/
+footer{
+    width: 100%;
+    background-color: #e3e3e3;
+    padding: 4em 0;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.horario .direccion{
+    width: 19em;
+    background-color: #cc3917;
 }

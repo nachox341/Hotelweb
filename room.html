@@ -4,74 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/room.css">
-    <title>Room</title>
+    <link rel="icon" type="image/x-icon" href="/image/Icon-logo.ico">
+    <script defer src="/js/room.js"></script>
+    <title>Nautilus</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
-        <div class="navbar-nav mr-auto py-0">
-            <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="service.html" class="nav-item nav-link">Services</a>
-            <a href="room.html" class="nav-item nav-link active">Rooms</a>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
+    <div class="barra">
+        <div class="nada"></div>
+        <div class="logo">
+            <img src="image/logo1.png">
         </div>
-    </nav>
-    <div class="container">
-        <h1 class="page-title">HABITACIONES</h1>
-    </div>
-    <div class="container">
-        <div class="room-item row-1">
-            <div class="image-container">
-                <img class="img" src="image/room-1.jpg" alt="Habitación 1">
-            </div>
-            <div class="description">
-                <div>
-                    <h5>Habitación Deluxe</h5>
-                </div>
-                <div>
-                    <a class="book-now-link" href="#">Reservar Ahora</a>
-                </div>
-            </div>
-        </div>
-        <div class="room-item">
-            <div class="image-container">
-                <img class="img" src="image/room-1.jpg" alt="Habitación 1">
-            </div>
-            <div class="description">
-                <div>
-                    <h5>Habitación Deluxe</h5>
-                </div>
-                <div>
-                    <a class="book-now-link" href="#">Reservar Ahora</a>
-                </div>
-            </div>
-        </div>
-        <div class="room-item">
-            <div class="image-container">
-                <img class="img" src="image/room-1.jpg" alt="Habitación 1">
-            </div>
-            <div class="description">
-                <div>
-                    <h5>Habitación Deluxe</h5>
-                </div>
-                <div>
-                    <a class="book-now-link" href="#">Reservar Ahora</a>
-                </div>
-            </div>
-        </div>
-        <div class="room-item">
-            <div class="image-container">
-                <img class="img" src="image/room-1.jpg" alt="Habitación 1">
-            </div>
-            <div class="description">
-                <div>
-                    <h5>Habitación Deluxe</h5>
-                </div>
-                <div>
-                    <a class="book-now-link" href="#">Reservar Ahora</a>
-                </div>
-            </div>
+        <div class="login">
+            <a href="login.html"><button>Iniciar Sesion</button></a>
         </div>
     </div>
+    <hr>
+    <div class="contenedor-navegador">
+        <nav class="navegador sticky">
+            <a href="home.html">Inicio</a>
+            <a href="room.html">Habitaciones</a>
+            <a href="about.html">Nosotros</a>
+            <a href="contact.html">Contacto</a>
+        </nav>
+    </div>
+    <hr>
+
+    <main>
+        <div class="contenedor-titulo">
+            <h1>HABITACIONES</h1>
+        </div>
+
+        <div class="contenedor-habitaciones">
+            <div class="habitacion">
+                <div class="contenedor-imagen">
+                    <img src="image/room-1.jpg" alt="Habitación 1">
+                </div>
+                <div class="descripcion">
+                    <div>
+                        <h5>Habitación Deluxe</h5>
+                    </div>
+                    <div>
+                        <a class="reserva" href="#">Reservar Ahora</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="habitacion">
+                <div class="contenedor-imagen">
+                    <img src="image/room-1.jpg" alt="Habitación 1">
+                </div>
+                <div class="descripcion">
+                    <div>
+                        <h5>Habitación Deluxe</h5>
+                    </div>
+                    <div>
+                        <a class="reserva" href="#">Reservar Ahora</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="habitacion">
+                <div class="contenedor-imagen">
+                    <img src="image/room-1.jpg" alt="Habitación 1">
+                </div>
+                <div class="descripcion">
+                    <div>
+                        <h5>Habitación Deluxe</h5>
+                    </div>
+                    <div>
+                        <a class="reserva" href="#">Reservar Ahora</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="habitacion">
+                <div class="contenedor-imagen">
+                    <img src="image/room-1.jpg" alt="Habitación 1">
+                </div>
+                <div class="descripcion">
+                    <div>
+                        <h5>Habitación Deluxe</h5>
+                    </div>
+                    <div>
+                        <a class="reserva" href="#">Reservar Ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fin"></div>
+    </main>
+
+    <footer>
+        <div class="horario">
+            <h1>Horario de apertura</h1>
+            <p>Lunes a jueves: 8:00</p>
+            <p>Viernes a Domingo: 6:00</p>
+        </div>
+        <div class="direccion">
+            <h1>Direccion</h1>
+            <p>Manuel Pl. 2940, 1111020 Iquique, Tarapacá</p>
+            <p>+569 65948932</p>
+        </div>
+    </footer>
 </body>
 </html>
