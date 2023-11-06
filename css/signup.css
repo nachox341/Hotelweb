@@ -1,13 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgba(240,240,232,255);
     margin: 0;
     height: 100vh;
 }
 
 .barra{
     padding: 18px 0;
-    color: rgba(240,240,232,255);
 
     display: flex;
     justify-content: center;
@@ -73,6 +71,11 @@ hr{
     color: #cc3917;
 }
 
+.separador{
+    margin: 15em;
+    background-color: white;
+}
+
 main{
     display: flex;
     justify-content: center;
@@ -91,22 +94,47 @@ main{
     justify-content: center;
 }
 
-.rojo {
-    background-color: #2b2823;
-    color: rgba(255,255,255);
+.gris {
+    background-color: #e3e3e3;
 }
 
-.blanco {
-    background-color: rgba(255,255,255);
-    color: #cc3917;
+.rojo {
+    color: white;
+    background-color: #cc3917;
     position: relative;
     top: 40px; 
     right: 40px;
 }
 
-.signup h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+.rojo a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.rojo a:hover {
+    color: #e3e3e3;
+}
+
+
+.logos{
+    width: 100%;
+    margin: 7em 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+#logo1{
+    width: 25%;
+}
+
+#logo2{
+    width: 70%;
 }
 
 .informacion {
@@ -127,14 +155,6 @@ main{
     border-radius: 3px;
     font-size: 16px;
     box-sizing: border-box;
-}
-
-a {
-    color: rgba(240,240,232,255);
-}
-
-a:hover {
-    color: #cc3917;
 }
 
 button {

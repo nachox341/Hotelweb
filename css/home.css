@@ -265,7 +265,7 @@ input, select{
 
 .contenedor-texto p{
     margin: 2em;
-    font-size: 40px;
+    font-size: 25px;
     text-align: justify;
 }
 
@@ -276,13 +276,18 @@ input, select{
     padding: 8em 0;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 8em;
 }
 
 .texto{
     width: 546px;
     margin-left: 8em;
+    font-size: 20px;
+}
+
+.texto p{
     font-size: 20px;
     text-align: justify;
 }

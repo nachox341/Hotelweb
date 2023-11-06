@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/contact.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <form id="form" class="form"  action="https://formspree.io/f/xdorjlbn" method="POST">
+
+            <div class="flex">
+                <label>
+                    <input name="nombre" placeholder="" type="text" class="input">
+                    <span>Primer nombre</span>
+                </label>
+
+                <label>
+                    <input name="apellido" placeholder="" type="text" class="input">
+                    <span>Apellido</span>
+                </label>
+            </div>
+
+            <label>
+                <input name="correo" placeholder="" type="email" class="input">
+                <span>Correo</span>
+            </label> 
+
+            <label>
+                <input name="telefono" type="tel" placeholder="" class="input">
+                <span>Numero de telefono</span>
+            </label>
+            <label>
+                <textarea name="mensaje" rows="3" placeholder="Escribe aqui" class="input01"></textarea>
+                <span>mensaje</span>
+            </label>
+
+            <button class="fancy" href="#">
+            <span class="top-key"></span>
+            <span class="text">submit</span>
+            <span class="bottom-key-1"></span>
+            <span class="bottom-key-2"></span>
+            </button>
+        </form>
+    <a href="mailto:adanayaviri2016@gmail.com " id="hack">
+    </a>
+        <script>
+            const $form = document.querySelector('#form')
+
+            $form.addEventListener('submit', handleSubmit)
+
+            async function handleSubmit(event){
+                event.preventDefault()
+                const form = new FormData(this)
+                const response = await fetch(this.action,{
+                    method: this.method,
+                    body:form,
+                    headers:{
+                        'Accept':'applitacion/json'
+                    }
+                })
+                if(response.ok){
+                    this.reset()
+                    alert('Gracias por contactarnos, pronto te contactaremos !')
+                }
+            }
+
+        </script>
+    </body>
+</html>

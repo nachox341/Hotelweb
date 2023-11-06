@@ -1,15 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgba(240,240,232,255);
-    background-size: cover;
-    background-repeat: no-repeat;
     margin: 0;
     height: 100vh;
 }
 
 .barra{
     padding: 18px 0;
-    color: rgba(240,240,232,255);
+    background-color: white;
 
     display: flex;
     justify-content: center;
@@ -75,13 +72,18 @@ hr{
     color: #cc3917;
 }
 
+.separador{
+    margin: 15em;
+    background-color: white;
+}
+
 main{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.login {
+.login{
     border-radius: 25px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -93,22 +95,46 @@ main{
     justify-content: center;
 }
 
-.rojo {
-    background-color: #2b2823;
-    color: rgba(255,255,255);
+.rojo{
+    color: white;
+    background-color: #cc3917;
+}
+
+.logos{
+    width: 100%;
+    margin: 7em 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+#logo1{
+    width: 25%;
+}
+
+#logo2{
+    width: 70%;
+}
+
+.rojo a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.rojo a:hover {
+    color: #e3e3e3;
+}
+
+.gris {
+    background-color: #e3e3e3;
     position: relative;
     top: 40px; 
     right: 40px;
-}
-
-.blanco {
-    background-color: rgba(255,255,255);
-    color: #cc3917;
-}
-
-.login h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
 }
 
 .usuario{
@@ -131,11 +157,11 @@ main{
     box-sizing: border-box;
 }
 
-a {
-    color: rgba(240,240,232,255);
+.gris a {
+    color: black;
 }
 
-a:hover {
+.gris a:hover {
     color: #cc3917;
 }
 
